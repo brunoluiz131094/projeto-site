@@ -1,29 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aroma de açucar</title>
+    <title>Registros - Aroma de Açúcar</title>
     <link rel="stylesheet" href="estilos/styles.css">
 </head>
 <body>
-    <main>
-        <Header>
-            <h1>Aroma de açucar</h1>
-            <img src="Imagens/1.jfif" alt="Docinhos">
-        </Header>
-        <Article>
-            <h2> Docinhos</h2>
-            <img class="lado" src="Imagens/3.jfif" alt="docinhos">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates modi voluptas praesentium placeat reiciendis fugit quis vel soluta hic fuga quod incidunt perspiciatis ex doloribus ipsam, autem aspernatur rem odit.</p>
-            <p> <a href="https://www.instagram.com/aroma.deacucar/">Acesse o Instagram</a></p>
-        </Article>
-        <article>
-            <H2> Bolos</H2>
-            <img  src="Imagens/5.jfif" alt="Bolos">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore aliquid numquam fugiat nemo. Neque necessitatibus veniam quae ab vitae non, error rerum eum quam voluptatibus maiores inventore nesciunt temporibus?</p>
-            <p> <a href="https://www.instagram.com/aroma.deacucar/">Acesse o Instagram</a></p>
-        </article>
+    <header>
+        <div class="header-container">
+            <h1 class="titulo">🍬 Aroma de Açúcar</h1>
+            <img src="Imagens/1.jfif" alt="Docinhos coloridos">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="fade-in">
+        <!-- FOTOS -->
+        <section id="fotos">
+            <h2 class="secao-titulo">📸 Galeria de Fotos</h2>
+            <p class="descricao">Confira algumas das nossas criações doces e encantadoras:</p>
+            <div class="galeria">
+                <img src="Imagens/5.jfif" alt="Bolo decorado com flores">
+                <img src="Imagens/1.jfif" alt="Docinhos variados coloridos">
+                <img src="Imagens/images.jfif" alt="Bolo temático de aniversário">
+                <img src="Imagens/3.jfif" alt="Docinhos gourmet para festa">
+            </div>
+        </section>
+
+        <!-- HISTÓRIA -->
+        <section id="historia">
+            <h2 class="secao-titulo">📖 Nossa História</h2>
+            <p class="descricao">
+                A *Aroma de Açúcar* começou com uma paixão simples: adoçar os momentos especiais da vida.
+                De uma cozinha caseira para um negócio cheio de sonhos, nossa missão é entregar amor em forma de doce.
+                Cada brigadeiro, cada bolo, carrega tradição, carinho e aquele sabor que acolhe.
+            </p>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2 class="secao-titulo">📬 Entre em Contato</h2>
+            <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- INSTAGRAM -->
+        <section class="instagram-link">
+            <h2 class="secao-titulo">📲 Nos siga no Instagram</h2>
+            <p class="descricao">Acompanhe as novidades, fotos e bastidores doces pelo nosso perfil:</p>
+            <a href="https://www.instagram.com/aroma.deacucar/" target="_blank" class="btn-instagram">
+                👉 Visite @aroma.deacucar
+            </a>
+        </section>
     </main>
 </body>
 </html>
